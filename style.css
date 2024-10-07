@@ -1,0 +1,772 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Root */
+:root{
+    ---red:#cc0e16;
+    ---black:#222222;
+    ---white:#ffffff;
+    ---grey:#737171;
+    ---light:#d9d9d9;
+    ---back:#fbfbfb;
+    --yellow:#ffae00;
+    --footer:#4c4c4c;
+}
+/* Root */
+
+/* Body */
+*{
+margin: 0px;
+padding: 0px;
+border: none;
+outline: none;
+text-decoration: none;
+text-transform: uppercase;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+html{
+font-size: 100%;
+scroll-behavior: smooth;
+scroll-padding-top: 0px;
+background-color: var(---back);
+}
+section{
+padding: 10px 150px;
+}
+/*body*/
+
+/*header*/
+.header{
+background-color: transparent;
+}
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .container nav{
+    display: flex;
+    align-items: center;
+}
+.header .container nav #navbar{
+    margin-right: 20px;
+}
+.header .container nav #navbar a{
+    font-size: 20px;
+    color: var(---grey);
+    font-weight: 500;
+    padding: 0px 20px;
+    padding-bottom: 10px;
+}
+.header .container nav #navbar a:hover{
+    border-bottom: 5px solid var(---red);
+    border-radius: 2px;
+    color: var(---red);
+    font-weight: 700;
+}
+.header .container nav .right{
+    display: flex;
+    align-items: center;
+}
+.header .container nav .right #menu{
+    font-size: 25px;
+    width: 80px;
+    height: 80px;
+    background-color: var(---light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+}
+.header .container nav .right #menu:hover{
+    background-color: var(---red);
+    color: var(---white);
+}
+.header .container nav .right button{
+    background-color: var(---red);
+    color: var(---white);
+    font-size: 20px;
+    font-weight: 600;
+    width: 200px;
+    height: 80px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.header .container nav .right button:hover{
+    box-shadow: 0px 15px 30px #cc0e18b9;
+}
+/*header*/
+
+/*hero area*/
+.hero{
+    background-image: url(img/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero .container .text{
+    text-align: center;
+}
+.hero .container .text h2{
+    font-size: 40px;
+    color: var(---red);
+    font-weight: 700;
+}
+.hero .container .text h1{
+    font-size: 80px;
+    color: var(---white);
+    font-weight: 700;
+}
+.hero .container .text p{
+    font-size: 20px;
+    color: var(---white);
+    font-weight: 500;
+}
+.hero .container .text button{
+    background-color: var(---red);
+    color: var(---white);
+    font-size: 20px;
+    font-weight: 600;
+    width: 200px;
+    height: 80px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.hero .container .text button:hover{
+    box-shadow: 0px 15px 30px #cc0e18b9;
+}
+/*hero area*/
+
+/*portfolio*/
+.port{
+    background-color: transparent;
+    margin-top: 150px;
+}
+.port .heading{
+    text-align: center;
+}
+.port .heading h2{
+    font-size: 40px;
+    color: var(---red);
+    font-weight: 700;
+}
+.port .heading h1{
+    font-size: 80px;
+    color: var(---black);
+    font-weight: 700;
+}
+.port .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.port .container .box{
+    width: 512px;
+    height: 720px;
+    background-color: var(---white);
+    border: 2px solid var(---light);
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px #0000002a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.port .container .box .text{
+    background-color: transparent;
+    margin-top: 30px;
+}
+.port .container .box .text h1{
+    font-size: 30px;
+    color: var(---black);
+    font-weight: 700;
+}
+.port .container .box .text h2{
+    font-size: 20px;
+    color: var(---red);
+    font-weight: 700;
+}
+.port .container .box .text p{
+    font-size: 16px;
+    color: var(---grey);
+    font-weight: 600;
+    line-height: 30px;
+    margin-top: 10px;
+}
+.port .container .box .text .button{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.port .container .box .text .button button{
+    width: 200px;
+    height: 70px;
+    background-color: var(---grey);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(---white);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.port .container .box .text .button button:hover{
+    background-color: var(---red);
+}
+.port .container .box .text .button .star{
+    margin-left: 5px;
+}
+.port .container .box .text .button .star i{
+    font-size: 30px;
+    color: var(--yellow);
+    padding-left: 5px;
+}
+
+.port .col-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.port .col-2 .box{
+    width: 512px;
+    height: 720px;
+    background-color: var(---white);
+    border: 2px solid var(---light);
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px #0000002a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.port .col-2 .box .text{
+    background-color: transparent;
+    margin-top: 30px;
+}
+.port .col-2 .box .text h1{
+    font-size: 30px;
+    color: var(---black);
+    font-weight: 700;
+}
+.port .col-2 .box .text h2{
+    font-size: 20px;
+    color: var(---red);
+    font-weight: 700;
+}
+.port .col-2 .box .text p{
+    font-size: 16px;
+    color: var(---grey);
+    font-weight: 600;
+    line-height: 30px;
+    margin-top: 10px;
+}
+.port .col-2 .box .text .button{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.port .col-2 .box .text .button button{
+    width: 200px;
+    height: 70px;
+    background-color: var(---grey);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(---white);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.port .col-2 .box .text .button button:hover{
+    background-color: var(---red);
+}
+.port .col-2 .box .text .button .star{
+   margin-left: 5px;
+}
+.port .col-2 .box .text .button .star i{
+    font-size: 30px;
+    color: var(--yellow);
+    padding-left: 5px;
+}
+.port .container .box .text{
+    background-color: transparent;
+    margin-top: 30px;
+}
+.port .container .box .text h1{
+    font-size: 30px;
+    color: var(---black);
+    font-weight: 700;
+}
+.port .container .box .text h2{
+    font-size: 20px;
+    color: var(---red);
+    font-weight: 700;
+}
+.port .container .box .text p{
+    font-size: 16px;
+    color: var(---grey);
+    font-weight: 600;
+    line-height: 30px;
+    margin-top: 10px;
+}
+.port .container .box .text .button{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.port .container .box .text .button button{
+    width: 200px;
+    height: 70px;
+    background-color: var(---grey);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(---white);
+    border-radius: 10px;
+    cursor: pointer;
+}
+/*portfolio*/
+
+/*contact us*/
+.contact{
+    margin-top: 150px;
+}
+.contact .heading{
+    text-align: center;
+}
+.contact .heading h1{
+    font-size: 80px;
+    font-weight: 800;
+    color: var(---black);
+}
+.contact .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.contact .container .box{
+    text-align: center;
+    width: 200px;
+    margin: 0px 100px;
+}
+.contact .container .box .image{
+    background-color: var(---white);
+    border: 2px solid var(---light);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    box-shadow: 0px 0px 20px #0000001e;
+}
+.contact .container .box .image:hover{
+    box-shadow: 0px 0px 20px #cc0e183b;
+    transform: scale(1.1,1.1);
+    transition: 1s;
+}
+.contact .container .box h1{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(---black);
+}
+/*contact us*/
+
+/*footer*/
+.footer{
+    background-color: var(--footer);
+    margin-top: 150px;
+}
+.footer .container{
+    text-align: center;
+    margin-top: 30px;
+}
+.footer .container .navbar a{
+    font-size: 20px;
+    color: var(---white);
+    padding: 0px 30px;
+    font-weight: 600;
+}
+.footer .last{
+    text-align: center;
+    border-top: 2px solid #ffffff71;
+    margin-top: 30px;
+}
+.footer .last p{
+    font-size: 20px;
+    color: var(---white);
+    font-weight: 500;
+    margin-top: 10px;
+}
+/*footer*/
+
+
+
+
+/* media quries */
+
+
+@media (max-width:1772px) {
+    section{
+        padding: 10px 100px;
+    }
+    .port .container .box{
+        width: 500px;
+    }
+    .port .col-2 .box{
+        width: 500px;
+    }
+}
+@media (max-width:1674px) {
+    section{
+        padding: 10px 75px;
+    }
+    .port .container .box{
+        width: 450px;
+    }
+    .port .col-2 .box{
+        width: 450px;
+    }
+    .port .container .box .text{
+        margin-left: 20px;
+    }
+    .port .col-2 .box .text{
+        margin-left: 20px;
+    }
+    .port .container .box{
+        width: 450px;
+    }
+    .port .col-2 .box{
+        width: 450px;
+    }
+}
+@media (max-width:1574px) {
+    section{
+        padding: 10px 50px;
+    }
+}
+@media (max-width:1450px) {
+    .port .container .box .data .image{
+        width: 90%;
+        margin: 0px auto;
+    }
+    .port .container .box .data .image img{
+        width: 100%;
+    }
+    .port .col-2 .box .data .image{
+        width: 90%;
+        margin: 0px auto;
+    }
+    .port .col-2 .box .data .image img{
+        width: 100%;
+    }
+    .port .container .box{
+        width: 400px;
+    }
+    .port .col-2 .box{
+        width: 400px;
+    }
+    .port .container .box .data .text .star i{
+        font-size: 25px;
+    }
+    .port .col-2 .box .data .text .star i{
+        font-size: 25px;
+    }
+    .port .container .box .data .text p{
+        font-size: 14px;
+    }
+    .port .col-2 .box .data .text p{
+        font-size: 14px;
+    }
+}
+@media (max-width:1280px) {
+    section{
+        padding: 10px 25px;
+    }
+    .header .container nav #navbar{
+        background-color: var(---white);
+        box-shadow: 0px 0px 20px #22222234;
+        width: 90%;
+        position: absolute;
+        top: 14%;
+        right: 5%;
+        margin: 0px auto;
+        display: none;
+    }
+    .header .container nav #navbar a{
+        display: block;
+        text-align: center;
+        line-height: 50px;
+        padding: 0px 0px;
+    }
+    .header .container nav .right #menu{
+        display: inherit;
+        margin-right: 20px;
+    }
+    .port{
+        margin-top: 100px;
+    }
+    .port .container{
+        display: block;
+        margin-top: 50px;
+    }
+    .port .container .box{
+        margin: 20px auto;
+    }
+    .port .col-2 .box{
+        margin: 20px auto;
+    }
+    .port .col-2{
+        display: block;
+    }
+    .port .container .box{
+        width: 512px;
+    }
+    .port .col-2 .box{
+        width: 512px;
+    }
+    .port .col-2 .box .text{
+        background-color: transparent;
+        margin-top: 30px;
+    }
+    .port .col-2 .box .text h1{
+        font-size: 30px;
+        color: var(---black);
+        font-weight: 700;
+    }
+    .port .col-2 .box .text h2{
+        font-size: 20px;
+        color: var(---red);
+        font-weight: 700;
+    }
+    .port .col-2 .box .text p{
+        font-size: 16px;
+        color: var(---grey);
+        font-weight: 600;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+    .port .col-2 .box .text .button{
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .port .col-2 .box .text .button button{
+        width: 200px;
+        height: 70px;
+        background-color: var(---grey);
+        font-size: 20px;
+        font-weight: 600;
+        color: var(---white);
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .contact{
+        margin-top: 100px;
+    }
+    .contact .container{
+        margin-top: 50px;
+    }
+    .footer{
+        margin-top: 100px;
+    }
+}
+@media (max-width:1080px) {
+    section{
+        padding: 10px 20px;
+    }
+    .contact .container{
+        display: block;
+    }
+    .contact .container .box{
+        margin: 20px auto;
+    }
+}
+@media (max-width:780px) {
+    section{
+        padding: 10px 15px;
+    }
+    .hero .container .text h1{
+        font-size: 60px;
+    }
+}
+@media (max-width:660px) {
+    section{
+        padding: 10px 10px;
+    }
+    .hero .container .text h2{
+        font-size: 20px;
+    }
+    .hero .container .text h1{
+        font-size: 50px;
+    }
+    .hero .container .text p{
+        font-size: 16px;
+    }
+    .hero .container .text button{
+        width: 180px;
+        height: 60px;
+    }
+    .port .heading h1{
+        font-size: 60px;
+    }
+    .port .container .box{
+        width: 100%;
+    }
+    .port .col-2 .box{
+        width: 100%;
+    }
+    .contact .heading h1{
+        font-size: 60px;
+    }
+    .footer .last p{
+        font-size: 16px;
+        color: var(---white);
+        font-weight: 500;
+        margin-top: 10px;
+    }
+}
+@media (max-width:500px) {
+    section{
+        padding: 10px 5px;
+    }
+    .hero .container .text h2{
+        font-size: 20px;
+    }
+    .hero .container .text h1{
+        font-size: 40px;
+    }
+    .hero .container .text p{
+        font-size: 14px;
+    }
+    .hero .container .text button{
+        width: 180px;
+        height: 60px;
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    .port{
+        margin-top: 50px;
+    }
+    .port .heading h1{
+        font-size: 40px;
+    }
+    .port .heading h2{
+        font-size: 20px;
+    }
+    .port .container{
+        margin-top: 30px;
+    }
+    .port .col-2{
+        margin-top: 30px;
+    }
+    .port .container .text{
+        text-align: center;
+    }
+    .port .container .box .text .button{
+        display: block;
+        margin-top: 20px;
+    }
+    .port .col-2 .text{
+        text-align: center;
+    }
+    .port .col-2 .box .text .button{
+        display: block;
+        margin-top: 20px;
+    }
+    .port .container .box .text .button .star{
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .port .col-2 .box .text .button .star{
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .port .container .box .text{
+        margin-left: 0px;
+    }
+    .port .col-2 .box .text{
+        margin-left: 0px;
+    }
+    .contact .heading h1{
+        font-size: 40px;
+    }
+    .contact{
+        margin-top: 50px;
+    }
+    .contact .container{
+        margin-top: 30px;
+    }
+    .footer .container .navbar a{
+        display: block;
+        line-height: 50px;
+    }
+    .footer{
+        margin-top: 50px;
+    }
+    .footer .last p{
+        font-size: 12px;
+    }
+}
+@media (max-width:400px) {
+    .header .container nav .right button{
+        display: none;
+    }
+    .header .container nav .right #menu{
+        margin-right: 0px;
+    }
+    .hero .container .text h2{
+        font-size: 20px;
+    }
+    .hero .container .text h1{
+        font-size: 35px;
+    }
+    .hero .container .text p{
+        font-size: 10px;
+    }
+    .hero .container .text button{
+        width: 150px;
+        height: 50px;
+    }
+    .port .container .box .text p{
+        font-size: 20px;
+        width: 90%;
+        margin: 10px auto;
+        color: var(---grey);
+        font-weight: 600;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+    .port .col-2 .box .text p{
+        font-size: 20px;
+        width: 90%;
+        margin: 10px auto;
+        color: var(---grey);
+        font-weight: 600;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+    .port .container .box .text h1{
+        font-size: 25px;
+    }
+    .port .col-2 .box .text h1{
+        font-size: 25px;
+    }
+    .port .heading h1{
+        font-size: 35px;
+    }
+    .contact .heading h1{
+        font-size: 35px;
+    }
+    .footer .last p{
+        font-size: 10px;
+    }
+}
+@media (max-width:320px) {
+
+}
+/* media quries */
